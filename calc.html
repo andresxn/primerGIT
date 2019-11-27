@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>       
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="card">
+                <p class="bg-success m-0 d-block" id='visor'></p>
+                <div class="card-body bg-dark">
+                    <div class="row">
+                        <button class="btn btn-danger col" value='C' onclick="borrarUno()">Borrar</button>
+                        <button class="btn btn-danger col" value="CE" onclick="delVisor()">CE</button>
+                        <button class="btn btn-danger col-2" value="memoryPlus" onclick="memoryPlus()">M+</button>
+                        <button class="btn btn-danger col-2" value="Ans" onclick="ans()">MR</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col" id='7' value="7" onclick="numero(value)">7</button>  
+                        <button class="btn btn-primary col" id='8' value="8" onclick="numero(value)">8</button>
+                        <button class="btn btn-primary col" value="9" onclick="numero(value)">9</button>
+                        <button class="btn btn-secondary col-2" value="("onclick="operador(value)">(</button>
+                        <button class="btn btn-secondary col-2" value=")" onclick="operador(value)">)</button>  
+                    </div>
+                    <div class="row">   
+                        <button class="btn btn-primary col" value="4" onclick="numero(value)">4</button> 
+                        <button class="btn btn-primary col" value="5" onclick="numero(value)">5</button> 
+                        <button class="btn btn-primary col" value="6" onclick="numero(value)">6</button>
+                        <button class="btn btn-secondary col-2" value="*" onclick="operador(value)">*</button> 
+                        <button class="btn btn-secondary col-2" value="/" onclick="operador(value)">/</button>   
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col" value="1" onclick="numero(value)">1</button>
+                        <button class="btn btn-primary col" value="2" onclick="numero(value)">2</button>
+                        <button class="btn btn-primary col" value="3" onclick="numero(value)">3</button> 
+                        <button class="btn btn-secondary col-2" value="+" onclick="operador(value)">+</button>
+                        <button class="btn btn-secondary col-2" value="-" onclick="operador(value)">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-secondary col" value="+/-" onclick="masMenos()">+/-</button> 
+                        <button class="btn btn-primary col" value="0" onclick="numero(value)">0</button>  
+                        <button class="btn btn-secondary col" value="." onclick="coma(value)">.</button>
+                        <button class="btn btn-secondary col-4" value= "=" onclick="botonIgual()">=</button>  
+                    </div>
+                </div>
+            </div>    
+        </div>
+<script src="calc.js"></script>
+</body>
